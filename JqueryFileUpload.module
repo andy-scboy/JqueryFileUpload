@@ -858,7 +858,7 @@ class JqueryFileUpload extends WireData implements Module {
 
 		$out =
 			"<div id='jfu_drop_area_wrapper'>" .
-				"<h3 class='InputfieldHeader uk-form-label'>Select Files</h3>" .
+				"<h3 class='InputfieldHeader uk-form-label'>".$this->_('Select Files')."</h3>" .
 				"<div class='drop-files-container{$dropZoneClass}' uk-grid>" .
 					// allowed extensions (@note: uk-width-1-1)
 					$this->renderAllowedFileExtensions().
